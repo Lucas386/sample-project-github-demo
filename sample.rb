@@ -79,16 +79,16 @@ SEARCH_LIMIT = 5
 # end 
 
 
-class Output
+# class Output
 
-  attr_accessor :name
-  attr_reader :term, :location
-  # attr_writer 
-    def initialize(name, term, location)
-      @name = name
-      @term = term
-      @location = location
-    end
+#   attr_accessor :name
+#   attr_reader :term, :location
+#   # attr_writer 
+#     def initialize(name, term, location)
+#       @name = name
+#       @term = term
+#       @location = location
+#     end
 
   case command.first
     when "search"
@@ -104,4 +104,4 @@ class Output
       puts "Please specify a command: search or lookup"
   end
   
-end
+# end
