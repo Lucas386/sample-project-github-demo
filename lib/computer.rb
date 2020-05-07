@@ -7,13 +7,14 @@
 
 class Computer
 
-  attr_accessor  :computer_type, :computer_price
+  attr_accessor  :computer_type, :computer_price, :place
 
   @@all = []
 
-  def initialize(computer_type, computer_price)
+  def initialize(computer_type, computer_price, place)
     @computer_type = computer_type
     @computer_price = computer_price
+    @place = place
     @@all << self
   end
 
@@ -25,7 +26,8 @@ class Computer
     self.all.each_with_index do |computer, idx|
         puts "<<< Computer ##{idx + 1} >>>"
         puts computer.computer_type
-        puts computer.computer_price
+        puts "$" + computer.computer_price
+        puts computer.place
         puts "----------------------"
     end
   end

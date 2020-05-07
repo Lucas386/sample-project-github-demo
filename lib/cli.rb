@@ -25,6 +25,14 @@ class Cli
         Scraper.scrape
     end
 
+    # def menu
+    #     puts ""
+    #     computer_choice = Computer.find_by_index 
+    #     info = gets.strip
+        
+
+    # end
+
     def run 
         greeting
         get_operator_name
