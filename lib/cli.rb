@@ -1,4 +1,6 @@
-class CLI 
+#Cli controller
+
+class Cli 
 
     attr_accessor :operator_name 
 
